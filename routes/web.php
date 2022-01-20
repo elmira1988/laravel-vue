@@ -26,6 +26,8 @@
     Route::get('/home/data-chart', 'HomeController@chartData');
     Route::get('/home/random-chart', 'HomeController@chartRandom');
     Route::get('/home/socket-chart', 'HomeController@newEvent');
+
+    Route::get('/home/laravel-views', 'HomeController@laravelViews');
 /*});*/
 
 

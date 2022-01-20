@@ -20,6 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+@laravelViewsStyles
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -72,9 +73,12 @@
             </div>
         </nav>
 
+
+
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+@livewireScripts
 </body>
 </html>

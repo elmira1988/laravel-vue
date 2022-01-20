@@ -110,4 +110,9 @@ class HomeController extends Controller
 
         return $result;
     }
+
+
+    public function  laravelViews(){
+        return view('laravel-views');
+    }
 }

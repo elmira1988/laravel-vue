@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use LaravelViews\LaravelViews;
+use LaravelViews\LaravelViewsServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +28,7 @@ class AppServiceProvider extends ServiceProvider
     {
 
         Schema::defaultStringLength(191);
+
+
     }
 }

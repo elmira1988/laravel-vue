@@ -29,7 +29,7 @@
         },
         mounted() {
             //Добавляем клиент для связи с сервером
-            let socket = io('http://localhost:3000',{transports: ['websocket']} );//{transports: ['websocket', 'polling', 'flashsocket']}
+            let socket = io.connect('http://localhost:3000',{transports: ['websocket']} );//{transports: ['websocket', 'polling', 'flashsocket']}
             console.log(socket);
 
             socket.on('connect', function() {
